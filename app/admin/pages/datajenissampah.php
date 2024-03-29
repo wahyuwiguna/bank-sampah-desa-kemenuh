@@ -8,7 +8,7 @@
     <div class="float-right">
         <button type="button" class="btn btn-primary btn-rounded btn-icon-text" id="btnAdd">
             <i data-feather="plus"></i>
-            Baru
+            Tambah
         </button>
     </div>
 </div>
