@@ -243,7 +243,7 @@
     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
         <div class="widget widget-table-one">
             <div class="widget-heading">
-                <h5 class="">Top Pengumpul Sampah Tahun <?php echo $tahun; ?></h5>
+                <h5 class="">Pengumpul Sampah Tahun <?php echo $tahun; ?></h5>
             </div>
 
             <div class="widget-content">

@@ -62,7 +62,7 @@
                             <!-- <center>
                                 <a href="#" class='open_modal' id='<?php echo $data['id_user']; ?>'><button class="btn btn-outline-secondary mb-2 mr-2 btn-sm rounded-circle"><i data-feather="edit-3"></i></button></a>
                             </center> -->
-                            <a href="#" id="<?php echo $data['id_user']; ?>" class="open_modal bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ubah"><i data-feather="edit-3"></i></a>
+                            <a id="<?php echo $data['id_user']; ?>" class="open_modal bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ubah"><i data-feather="edit-3"></i></a>
                         </td>
                         <?php 
                         echo "</tr>";
@@ -239,7 +239,20 @@
             }
         });
 
-        $(".open_modal").click(function(e) {
+        // $(".open_modal").on('click', function(e) {
+        //     var m = $(this).attr("id");
+        //     $.ajax({
+        //     url: "Pages/ubahuser.php",
+        //     type: "GET",
+        //     data : {id_user: m,},
+        //     success: function (ajaxData){
+        //             $("#ModalEdit").html(ajaxData);
+        //             $("#ModalEdit").modal('show',{backdrop: 'true'});
+        //         }
+        //     });
+        // });
+
+        $('#zero-config').on('click', '.open_modal', function() {
             var m = $(this).attr("id");
             $.ajax({
             url: "Pages/ubahuser.php",

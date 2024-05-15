@@ -167,7 +167,7 @@
             }
         });
 
-        $(".open_modal").click(function(e) {
+        $('#zero-config').on('click', '.open_modal', function() {
             var m = $(this).attr("id");
             $.ajax({
             url: "Pages/ubahpengepul.php",
@@ -179,6 +179,7 @@
                 }
             });
         });
+
     });
 </script>
 

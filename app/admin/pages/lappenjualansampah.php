@@ -180,7 +180,7 @@
 <script>
     var sBar = {
         chart: {
-            height: 170,
+            height: 350,
             type: 'bar',
             toolbar: {
                 show: false,
